@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public NoteData Data;
+    private INoteBehaviour behaviour;
 
-    // Update is called once per frame
-    void Update()
+    public void Play(BeatContext context)
     {
-        
+        behaviour.Execute(context);
     }
 }

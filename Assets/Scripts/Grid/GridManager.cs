@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public bool CanPlaceNote(GridCell cell, NoteData note)
     {
-        
-    }
+        // Check if the cell is already occupied
+        // Check if the note can fit in the cell based on its size
+        // Additional game-specific placement rules can be added here
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return true;
     }
 }

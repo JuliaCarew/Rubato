@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class NoteData : MonoBehaviour
+[CreateAssetMenu(menuName = "Rubato/Note Data")]
+public class NoteData : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("Identity")]
+    public string noteName;
+    public NoteType type;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [Header("Combat")]
+    public int damage;
+    public float range;
+    public int duration;
+
+    [Header("Music")]
+    public FrequencyType frequency;
 }

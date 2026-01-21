@@ -1,16 +1,8 @@
 using UnityEngine;
 
-public class EnemyData : MonoBehaviour
+[CreateAssetMenu]
+public class EnemyData : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int health;
+    public FrequencyType weakness;
 }

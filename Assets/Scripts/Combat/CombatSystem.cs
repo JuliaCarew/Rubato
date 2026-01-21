@@ -2,15 +2,8 @@ using UnityEngine;
 
 public class CombatSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void DamageEnemies(Vector3 position, float range, int damage)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Logic to damage enemies within the specified range at the given position
     }
 }

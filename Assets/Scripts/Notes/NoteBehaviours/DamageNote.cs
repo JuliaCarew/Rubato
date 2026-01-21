@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class DamageNote : MonoBehaviour
+public class DamageNote : MonoBehaviour, INoteBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Execute(BeatContext context)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Logic to damage enemies when the note is played
     }
 }
